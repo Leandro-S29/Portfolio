@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro Porfolio</title>
+
+    <link rel="stylesheet" href="CSS/Style.css">
+
+    <script src="JS/NavBar.js"></script>
+    
+    <script src="https://kit.fontawesome.com/2b3b05360f.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+</head>
+<body>
+
+<div class="NavBarBase" id="SiteNavBar">
+    <a href=""><i class="fa-solid fa-code" style="color: #B197FC;"></i></a>
+    <a href="#MoreAboutMe" class="active">About</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Projects">Projects</a>
+    <a href="#ContactMe">Contact Me!</a>
+    <a href="javascript:void(0);" class="icon" onclick="NavBarResponsive()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+     <!-- About me Start -->
+<div>
+<div class="AboutMe" id="about">
+    <h1> Hi. I'm Leandro! <i class="fa-solid fa-pen fa-bounce fa-2xs"></i></h1>
+    <p>I'm a passionate and results-driven Full Stack Developer. <br> My journey in the world of web development started with a fascination <br> for turning ideas into functional, user-friendly applications.</p>
+    <a href="Content/CV - Leandro Filipe Costa Santos.pdf" download="LeandroCV" class="downloadCV">Download my CV</a>
+</div> 
+
+
+  
+<div style="background-color: #6204aa;" id="MoreAboutMe">
+<div class="AboutMeCardContainer">
+
+    <div class="AboutMeCard">
+        <img src="imgs/Leandro.jpg" alt="Image description" class="AboutMeCardimg">
+    </div>
+
+     <div class="AboutMeCard">
+        <h2>More About me</h2>
+        <p>I've been passionate about coding and computers since childhood, and I started my journey by self-study. Later, I pursued a professional informatics course to expand my knowledge. I also had the opportunity to participate in a Robotics Club, where my team received trophies. I worked with hardware like Arduinos and Raspberry Pi, coding in Java. <br> <br> Currently, I'm studying at IPS and working as an intern at CGI, balancing academic learning with practical experience.</p>
+    </div>
+</div>
+</div>
+
+</div>
+ <!-- About me End -->
+
+ <!-- Skills Start -->
+<div class="skills" id="Skills">
+    <h1>Skills</h1> <br> <br>
+    <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 90%;">
+                <span class="percentage">90%</span>
+            </div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 80%;">
+                <span class="percentage">80%</span>
+            </div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 40%;">
+                <span class="percentage">40%</span>
+            </div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">C</div>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 70%;">
+                <span class="percentage">70%</span>
+            </div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">Pyhton</div>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 40%;">
+                <span class="percentage">40%</span>
+            </div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">Java</div>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 30%;">
+                <span class="percentage">30%</span>
+            </div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">SQL</div>
+        <div class="skill-bar">
+            <div class="skill-level" style="width: 50%;">
+                <span class="percentage">50%</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Skills End -->
+
+<!-- Projects Start -->
+<div id="Projects" style="background-color:#6204aa;">
+    <h1 style="text-align: center; color: #ffffff;">Projects</h1>
+    <div class="card-container">
+        <div class="card">
+            <img src="imgs/PoseidonProject.jpg" alt="Project 1">
+            <div class="card-text">
+                <p>Poseidon was an old Project of mine that used Arduino and Python <br> to make an Automatic Aquarium. <br> <br> The Software made with python would show all the data  of  the <br> Aquarium  while the arduino would do the actions and receive <br> the data. </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imgs/CachesProject.jpg" alt="Project 2">
+            <div class="card-text">
+                <p>This project i made a code in C that helped me do a loot of functions <br> about a game called GeoCaching.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imgs/ProjectBotOlympics.jpg" alt="Project 3">
+            <div class="card-text">
+                <p>One of my biggest project was made with a Team i had of Robotics, <br> where we made an robot be autonomous using sensors. <br> <br> We got in the 3º Place of a competiton called BotOlympics <br> made by the Politechnic of  Coimbra using that same Project.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Projects End -->
+
+<!-- Contact Start -->
+<div class="contact-form" id="ContactMe">
+    <h1>Contact me</h1>
+    <form action="https://formspree.io/f/mzbndory" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<!-- Contact End -->
+
+</body>
+</html>
