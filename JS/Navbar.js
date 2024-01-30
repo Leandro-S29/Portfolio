@@ -1,8 +1,10 @@
 function NavBarResponsive() {
     var x = document.getElementById("SiteNavBar");
-    if (x.className === "NavBarBase") {
-      x.className += " responsive";
+    if (x.classList.contains("NavBarBase")) {
+      x.classList.remove("NavBarBase");
+      x.classList.add("responsive");
     } else {
-      x.className = "NavBarBase";
+      x.classList.remove("responsive");
+      x.classList.add("NavBarBase");
     }
-  }
+}
